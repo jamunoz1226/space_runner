@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#game-area {
+  width: 600px;
+  height: 300px;
+  border: 2px solid black;
+  margin: 20px auto;
+  position: relative;
+  background-color: #111;
+}
+
+#player {
+  width: 40px;
+  height: 40px;
+  background-color: cyan;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+
+  /*What this does
+display: flex
+Turns the box into a flex container.
+align-items: center
+Centers content vertically.
+justify-content: center
+Centers content horizontally. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
