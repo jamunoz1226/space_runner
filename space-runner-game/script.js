@@ -98,3 +98,12 @@ function showScreen(screenId) {
       }
     });
 }
+
+//when the page loads show this screen first
+showScreen(start-screen);
+
+// when button clicked..
+document.getElementById(start-screen).addEventListener("click", function(){
+  // .. show this screen:
+  showScreen(start-screen);
+})
