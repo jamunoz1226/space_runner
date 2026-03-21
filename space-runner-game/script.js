@@ -68,16 +68,6 @@ document.addEventListener("keydown", function(event) {
   }
 });
 
-
-/* This is the main game loop. It runs repeatedly, 
-allowing us to update the game state and redraw the screen. */
-updatePlayer();
-
-/* setInterval is a JavaScript function that calls a 
-specified function at regular intervals (in milliseconds).
-So now gravity will keep pulling the player every frame.*/
-setInterval(updatePlayer, 50);
-
 /* What this does
 gameLoop runs
 ↓
@@ -95,3 +85,16 @@ function gameLoop() {
 }
 
 gameLoop();
+
+function showScreen(screenId) {
+  // 1. Hide all 4 screens
+    const screens = document.querySelectorAll(".screen");    
+  // 2. Show only the one matching screenId
+    screens.forEach(screen => {
+      if (screen.id === screenId) {
+        screen.style.display = "block";
+      } else {
+        screen.style.display = "none";
+      }
+    });
+}
