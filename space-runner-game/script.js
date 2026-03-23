@@ -68,6 +68,10 @@ document.addEventListener("keydown", function(event) {
   }
 });
 
+document.addEventListener("touchstart", function (){
+  jump();
+});
+
 /* What this does
 gameLoop runs
 ↓
